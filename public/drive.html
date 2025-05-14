@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexum Cloud – Mis Archivos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-mode">
+
+    <!-- Barra superior -->
+    <header class="navbar">
+        <div class="logo">Nexum Cloud</div>
+        <div class="navbar-actions">
+            <button id="toggle-theme" class="btn small">Claro / Oscuro</button>
+            <button id="logout" class="btn small danger">Cerrar sesión</button>
+        </div>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="drive-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Carpetas</h2>
+                <button id="create-folder-btn" class="btn small">+</button>
+            </div>
+            <ul id="folderList" class="folder-list">
+                <li class="folder active" data-id="root">Principal</li>
+                <!-- Más carpetas aquí -->
+            </ul>
+        </aside>
+
+        <!-- Panel principal -->
+        <section class="drive-panel">
+            <section class="section-header">
+                <h1 id="current-folder-name">Principal</h1>
+                <p>Gestiona tus archivos en esta carpeta</p>
+            </section>
+
+            <section id="file-grid" class="file-grid">
+                <!-- Archivos aquí -->
+            </section>
+
+            <input type="file" id="fileInput" accept=".txt" hidden>
+            <button id="uploadBtn" class="upload-btn">+</button>
+        </section>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexum Cloud – Acceso</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+
+    <main class="auth-wrapper">
+        <section class="auth-panel">
+            <div class="logo-section">
+                <h1>Nexum Cloud</h1>
+                <p>La nueva forma de gestionar tus archivos</p>
+            </div>
+
+            <div class="auth-forms">
+                <!-- Registro -->
+                <form id="register-form">
+                    <h2>Crear cuenta</h2>
+                    <div class="input-group">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input type="text" name="apellidos" placeholder="Apellidos" required>
+                        <input type="text" name="pais" placeholder="País" required>
+                        <input type="text" name="username" placeholder="Usuario" required>
+                        <input type="password" name="password" placeholder="Contraseña" required>
+                        <input type="text" name="tarjeta" placeholder="Tarjeta" required>
+                    </div>
+                    <button type="submit" class="btn primary full">Registrarse</button>
+                </form>
+
+                <!-- Login -->
+                <form id="login-form">
+                    <h2>Iniciar sesión</h2>
+                    <div class="input-group">
+                        <input type="text" name="username" placeholder="Usuario" required>
+                        <input type="password" name="password" placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" class="btn secondary full">Entrar</button>
+                </form>
+            </div>
+
+            <div id="response" class="response-msg"></div>
+        </section>
+    </main>
+
+    <button id="toggle-theme" class="theme-toggle">Oscuro/Claro</button>
+    <script src="app.js"></script>
+</body>
+</html>
